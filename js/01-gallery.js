@@ -42,12 +42,12 @@ function onImageClick(event) {
       window.scrollTo(0, 0);
     });
 
-    galleryContainer.addEventListener("keydown", offEscapeClose);
+    galleryList.addEventListener("keydown", offEscapeClose);
 
     function offEscapeClose(event) {
       if (event.code === "Escape") {
         instance.close();
-        galleryContainer.removeEventListener("keydown", offEscapeClose);
+        galleryList.removeEventListener("keydown", offEscapeClose);
       }
     }
   }
